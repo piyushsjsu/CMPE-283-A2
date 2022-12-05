@@ -42,6 +42,31 @@
       * ```sudo reboot```
       
 7. Run the below command to check if our kernel is installed:
-      * ```uname -a```
+   * ```uname -a```
+
+8. To make changes in the kvm hypervisor, navigate to 'arch' directory:    
+   * ```cd ~/linux/arch/x86/kvm```
+ 
+9. Replace or modify vmx.c and cpuid.c files with the files present in this repo.
+
+10. Go back to the top level of linux and perform Step 6.
+
+11. Create an VM inside our current VM (nested VM). Install  virtual manager first using the below command:
+    * ```sudo apt-get install virt-manager```
+    
+12. I tried to interact with the inner VM using the CLI but failed. I ended up using chrome desktop server.
+    * https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine
+    
+13. Go to https://remotedesktop.google.com/headless and follow the steps to connect to your inner VM instance.
+
+14. Download ubuntu image using the following command:
+    * ```wget https://releases.ubuntu.com/jammy/ubuntu-22.04.1-desktop-amd64.iso```
+
+15. Open virt manager and install this ubuntu image on your inner VM using the GUI.
+    * ```sudo virt-manager```
+ 
+16. Now we can perform Assignment 2 on the inner VM. Create or copy test.c file from this repo on to you inner VM.
+
+17. Compile and run A2-test.c to verify the result of CPUID.
    
 
