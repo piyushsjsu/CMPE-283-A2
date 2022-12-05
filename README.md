@@ -1,5 +1,9 @@
 <h2 align="center">CMPE-283 Assignment 2 (Instrumentation via hypercall)</h2>
 
+<b>Please refer screenshots folder to verify the completion of this assignment.</b>
+<br/>
+<br/>
+
 
 <h4>Below are the steps for completing the assignment using GCP.</h4>
 
@@ -67,6 +71,6 @@
  
 16. Now we can perform Assignment 2 on the inner VM. Create or copy test.c file from this repo on to you inner VM.
 
-17. Compile and run test.c to verify the result of CPUID.
+17. Compile and run test.c to verify the result.
    
 
