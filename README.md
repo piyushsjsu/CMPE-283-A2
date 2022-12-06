@@ -4,7 +4,23 @@
 <br/>
 <br/>
 
+<h4>Work done by each member of the team.</h4>
 
+   * Piyush Mamidwar (016709966)
+      * Modified the vmx.c file to implement leafs 0x4FFFFFFC and 0x4FFFFFFD.
+      * Wrote test.c file to print total exits and total cycles.
+      * Debugged errors that occured after editing vmx.c and cpuid.c files.
+      * Install virt manager and the nested VM and installed ubuntu OS on it.
+      * Figured out how to access inner VM on GCP. Couldn't access inner VM using CLI. (Used Chrome remote desktop)
+      * Wrote steps on how to perform this assignment.
+  
+   * Harsh Patel (016567005)
+      * Configured the VM to enable nested virtualization and to make builds faster and increased storage space.
+      * Cloned the linux repo and configured it correctly for the current VM installed all the required modules to build it.
+      * Modified the vmx.c file to count total number of exits and to find total cycles.
+      * Built and installed the modified kernel and verified if it is correctly installed.
+      * Wrote some of the steps on how to perform this assignment.
+<br/>
 <h4>Below are the steps for completing the assignment using GCP.</h4>
 
 1. Create a VM Instance on GCP having atleast 8 cores and 32GB RAM (To make the builds faster) with nested virtualization enabled.
