@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 
+// Referred from https://www.spinics.net/lists/linux-tip-commits/msg61284.html
 
 static inline void __cpuid(unsigned int *eax,
  			unsigned int *ebx,
